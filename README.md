@@ -7,7 +7,7 @@
 </div>
 
 ## Download App
-[Dowload](./app/release/app-release.apk)
+[Dowload](https://github.com/shyamkanth/Money-Log/raw/refs/heads/main/app/release/app-release.apk)
 
 
 ## 📌 Features
