@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@color/black_bg">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:gravity="center">
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="100dp"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:id="@+id/displayPicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_person_hint"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/tvUserFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Shyam Sunder Kanth"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="26sp"
+                android:letterSpacing="0.07"
+                android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/bg_edittext"
+                android:drawableStart="@drawable/ic_person_hint"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/hint_user_name"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_primary_hint" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/bg_edittext"
+                android:drawableStart="@drawable/ic_person_hint"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/hint_full_name"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/color_primary_hint" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/bg_edittext"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/hint_mpin"
+                android:inputType="number"
+                android:focusable="false"
+                android:clickable="true"
+                android:padding="20dp"
+                android:textColor="@color/color_primary_info"
+                android:textColorHint="@color/color_primary_hint" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCurrentBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/bg_edittext"
+                android:drawableStart="@drawable/ic_rupee_new"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/net_available_balance"
+                android:inputType="number"
+                android:enabled="false"
+                android:focusable="false"
+                android:clickable="true"
+                android:padding="20dp"
+                android:textColor="@color/color_primary_info"
+                android:textColorHint="@color/color_primary_hint" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/bg_button"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/save"
+            android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/forgot_mpin"
+                android:textAlignment="textEnd"
+                android:textColor="@color/color_primary_info" />
+            <TextView
+                android:id="@+id/btnChangeMpin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/change_mpin"
+                android:textAlignment="textEnd"
+                android:textColor="@color/color_primary_blue" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

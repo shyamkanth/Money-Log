@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:background="@color/black_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvExpenseAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="38450.0"
+                    android:textColor="#EA6C6C"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:drawableStart="@drawable/ic_rupee_spend"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvExpenseName"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    tools:text="Expense Name"
+                    android:textColor="@color/white"
+                    android:gravity="end"
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_marginHorizontal="10dp"
+                    android:letterSpacing="0.04"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvExpenseDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Date : 25-03-2025"
+                    android:textColor="@color/color_primary_info"
+                    android:gravity="center_vertical"
+                    android:textSize="13sp"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvExpenseDesc"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    tools:text="Description: This is some..."
+                    android:textColor="@color/color_primary_info"
+                    android:gravity="end"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginHorizontal="10dp"
+                    android:letterSpacing="0.04"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_forward_blue" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_primary_info"/>
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@color/color_primary_hint"/>-->
+
+</LinearLayout>
