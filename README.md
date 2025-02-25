@@ -6,6 +6,8 @@
     <img src="./app/src/main/res/screenshots/money-log.webp" alt="Money Log Banner" width="200">
 </div>
 
+## Download App
+[Dowload](./app/release/app-release.apk)
 
 
 ## 📌 Features
